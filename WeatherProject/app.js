@@ -11,7 +11,7 @@ app.get("/",function(req,res){
 })
 
 app.post("/",function(req,res){
-    const url="https://api.openweathermap.org/data/2.5/weather?q="+req.body.cityName+"&appid=1d3a224fb9950dde12ba9ee13d5f8f95&units=metric"
+    const url="https://api.openweathermap.org/data/2.5/weather?q="+req.body.cityName+"&appid=enterapikeyhere&units=metric"
     https.get(url,function(response){
     console.log(response.statusCode)
     response.on("data",function(data){
